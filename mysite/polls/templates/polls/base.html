@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1> Django </h1>
+
+    <style>
+        .header {
+            padding: 10px;
+            background-color: #009933;
+            color: white;
+        }
+    </style>
+
+</div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <style>
+        .content {
+            display: block;
+        }
+
+    </style>
+</div>
+
+<!--Footer-->
+<footer class="page-footer text-center text-md-left pt-4">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+
+    </div>
+    <!--/.Footer Links-->
+
+    <hr>
+
+    <!--Call to action-->
+    <div class="call-to-action text-center my-4">
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+                <h5>Register for free</h5>
+            </li>
+            <li class="list-inline-item"><a href="" class="btn btn-primary">Sign up!</a></li>
+        </ul>
+    </div>
+    <!--/.Call to action-->
+    <hr>
+    <!--Social buttons-->
+    <div class="social-section text-center">
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a class="btn-floating btn-fb"><i class="fab fa-facebook-f"> </i></a></li>
+            <li class="list-inline-item"><a class="btn-floating btn-tw"><i class="fab fa-twitter"> </i></a></li>
+            <li class="list-inline-item"><a class="btn-floating btn-gplus"><i class="fab fa-google-plus-g"> </i></a>
+            </li>
+            <li class="list-inline-item"><a class="btn-floating btn-li"><i class="fab fa-linkedin-in"> </i></a></li>
+            <li class="list-inline-item"><a class="btn-floating btn-git"><i class="fab fa-github"> </i></a></li>
+        </ul>
+    </div>
+    <!--/.Social buttons-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        <div class="container-fluid">
+            © 2018 Copyright: <a href="http://www.MDBootstrap.com"> nguyenvandat170296@gmail.com</a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+<style>
+    /* Only for snippet */
+    .double-nav .breadcrumb-dn {
+        color: #fff;
+    }
+</style>
+<script>
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+
+    new WOW().init();
+
+</script>
+
+<style type="text/css">
+  footer {
+    color: #ccc;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+</style>
+</body>
+</html>
